@@ -21,6 +21,10 @@
                 <a class="btn btn-success" href="{{ route('menus.create') }}"> Add New Menu</a>
             </div>
             <br>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('main.index') }}"> Back</a><br>
+            </div>
+            <br>
         </div>
     </div><br>
 {{--

@@ -20,14 +20,12 @@
                 <a class="btn btn-success" href="{{ route('orders.store') }}"> Add New Order</a>
             </div>
             <br>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('main.index') }}"> Back</a><br>
+            </div>
+            <br>
         </div>
     </div><br>
-    {{--
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif --}}
 
     <table class="table table-bordered">
         <tr>

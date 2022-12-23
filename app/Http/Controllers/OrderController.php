@@ -77,7 +77,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        $datas = DB::select('SELECT nama FROM menus');
+        // $datas = DB::select('SELECT nama FROM menus');
 
         $datas = DB::select('SELECT om.menu_id,m.nama,m.rekomendasi,om.quantity,m.harga FROM order_menu om LEFT JOIN menus m ON om.menu_id = m.id WHERE om.order_id = ?',[$order->id]);
 
