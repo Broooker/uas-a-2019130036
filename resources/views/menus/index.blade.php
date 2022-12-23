@@ -22,9 +22,10 @@
             </div>
             <br>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('main.index') }}"> Back</a><br>
+                <a class="btn btn-primary" href="{{ route('main.index') }}"> Back</a>
+
+                <a class="btn btn-primary" href="{{ route('main.index') }}"> Home</a>
             </div>
-            <br>
         </div>
     </div><br>
 {{--

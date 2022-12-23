@@ -17,13 +17,14 @@
             </div>
             <br>
             <div class="pull-left">
-                <a class="btn btn-success" href="{{ route('orders.store') }}"> Add New Order</a>
+                <a class="btn btn-success" href="{{ route('orders.create') }}"> Add New Menu</a>
             </div>
             <br>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('main.index') }}"> Back</a><br>
+                <a class="btn btn-primary" href="{{ route('main.index') }}"> Back</a>
+
+                <a class="btn btn-primary" href="{{ route('main.index') }}"> Home</a>
             </div>
-            <br>
         </div>
     </div><br>
 
@@ -46,6 +47,8 @@
                 @endif
                 <td>
                     <form action="{{ route('orders.destroy', $order->id) }}" method="POST">
+{{--
+                        <a class="btn btn-success" href="{{ route('orders.create') }}"> Add </a> --}}
 
                         <a class="btn btn-info" href="{{ route('orders.show', $order->id) }}">Show</a>
 

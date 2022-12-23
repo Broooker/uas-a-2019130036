@@ -25,3 +25,4 @@ Route::get('/', [AppController::class, 'index'])->name('main.index');
 Route::resource('menus', MenuController::class);
 
 Route::resource('orders', OrderController::class);
+
